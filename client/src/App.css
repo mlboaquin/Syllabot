@@ -1,0 +1,338 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.pdf-uploader {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.extracted-dates {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.extracted-dates ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extracted-dates li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-list {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  padding: 15px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduces space between logo and text */
+}
+
+.logo {
+  height: 40px; /* Adjust size as needed */
+  width: auto;
+}
+
+/* Update existing styles */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  margin: 0; /* Removes default margin */
+  font-size: 24px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.user-info span {
+  font-size: 14px;
+}
+
+/* Common button styles */
+button, .file-input-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .file-input-button:hover {
+  background-color: #357abd;
+}
+
+/* Specific styles for logout button */
+.logout-button {
+  background-color: #e74c3c;
+  margin-left: 15px;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Style for file input */
+input[type="file"] {
+  display: none;
+}
+
+.file-input-button {
+  display: inline-block;
+  background-color: #2ecc71;
+}
+
+.file-input-button:hover {
+  background-color: #27ae60;
+}
+
+/* Disabled button states */
+button:disabled, .file-input-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-button {
+  background-color: #2ecc71;
+}
+
+.upload-button:hover {
+  background-color: #27ae60;
+}
+
+.button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.upload-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pdf-uploader {
+  width: 100%;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.upload-button input {
+  display: none;
+}
+
+.process-button {
+  /* Add your button styling here */
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+.event-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.event-title {
+  margin: 0 0 10px 0;
+}
+
+.event-detail {
+  margin: 5px 0;
+}
+
+.event-description {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.add-calendar-button {
+  /* Add your button styling here */
+}
+
+
+.calendar-setup-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.calendar-setup-warning p {
+  color: #856404;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.calendar-setup-warning button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-setup-warning button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-setup-warning button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
