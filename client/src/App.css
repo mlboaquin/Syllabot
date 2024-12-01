@@ -260,10 +260,6 @@ button:disabled, .file-input-button:disabled {
   display: none;
 }
 
-.process-button {
-  /* Add your button styling here */
-}
-
 .events-list {
   list-style: none;
   padding: 0;
@@ -295,10 +291,6 @@ button:disabled, .file-input-button:disabled {
   border: 1px solid #eee;
   max-width: 100%;
   overflow: auto;
-}
-
-.add-calendar-button {
-  /* Add your button styling here */
 }
 
 
