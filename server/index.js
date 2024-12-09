@@ -71,10 +71,6 @@ const validateEventInput = [
 ];
 
 // Apply middleware to protected routes
-app.get('/api/events', authenticateUser, async (req, res) => {
-  // ... existing code ...
-});
-
 app.post('/api/events', authenticateUser, validateEventInput, async (req, res) => {
   try {
     console.log('Starting event creation process...');
@@ -589,12 +585,11 @@ app.post('/api/extract-dates', authenticateUser, upload.single('pdf'), async (re
               : `Week ${weekMatch[1]}`;
 
             events.push({
-              summary: event.module,
+              summary: courseTitle + " | " + weekInfo,
               description: `${courseTitle}\n` +
                           `${'='.repeat(courseTitle.length)}\n\n` +
                           `Module: ${event.module}\n\n` +
                           `${weekInfo}\n` +
-                          `Date Range: ${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}\n\n` +
                           `Activities and Assessment:\n${event.activitiesAndAssessment}\n\n` +
                           `Technology: ${event.technology}\n` +
                           `Mode: ${event.isOnsite ? 'Onsite' : 'Online'}${event.isAsync ? ' (Asynchronous)' : ' (Synchronous)'}`,
